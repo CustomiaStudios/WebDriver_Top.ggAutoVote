@@ -5,13 +5,13 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
     try {
         await driver.get('https://discord.com/login');
         
-        await driver.findElement(By.name('email')).sendKeys('adhamtarek2007@gmail.com');
-        await driver.findElement(By.name('password')).sendKeys('adham2007oda', Key.ENTER);
+        await driver.findElement(By.name('email')).sendKeys(''); //YOUR_EMAIL
+        await driver.findElement(By.name('password')).sendKeys('', Key.ENTER); //YOUR_PASSWORD
 
         await sleep(10000);
         console.log('Done!')
 
-        await driver.findElements(By.id('people___353978751484297219')).sendKeys(Key.ENTER);
+        await driver.findElements(By.id('')).sendKeys(Key.ENTER); //USER_ID
     }
     finally{
     }
